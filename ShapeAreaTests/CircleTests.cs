@@ -1,6 +1,9 @@
 using ShapesArea;
+
 namespace ShapeAreaTests {
+
 	public class CircleTests {
+
 		[Theory()]
 		[InlineData(0.0, 0)]
 		[InlineData(4.0, 50.26548245743669)]

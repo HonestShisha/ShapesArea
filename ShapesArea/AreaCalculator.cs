@@ -1,5 +1,5 @@
 ﻿namespace ShapesArea {
-	public class AreaCalculator {
 
+	public class AreaCalculator {
 	}
 }

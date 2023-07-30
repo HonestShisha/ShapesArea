@@ -1,4 +1,5 @@
 ﻿namespace ShapesArea {
+
 	public class Triangle : IShape {
 		public double[] SidesLengths { get; set; }
 
