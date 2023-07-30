@@ -1,9 +1,9 @@
 ﻿namespace ShapesArea {
 
-	public class Triangle : IShape {
+	public class TriangleCalculator : IAreaCalculator {
 		public double[] SidesLengths { get; set; }
 
-		public Triangle(double[] sidesLengths) {
+		public TriangleCalculator(double[] sidesLengths) {
 			if (sidesLengths.Length != 3) {
 				throw new Exception($"{nameof(sidesLengths)} должна содержать ровно три элемента.");
 			}

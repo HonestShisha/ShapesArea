@@ -1,9 +1,9 @@
 ﻿namespace ShapesArea {
 
-	public class Circle : IShape {
+	public class CircleCalculator : IAreaCalculator {
 		public double Radius { get; set; }
 
-		public Circle(double radius) {
+		public CircleCalculator(double radius) {
 			Radius = radius;
 		}
 

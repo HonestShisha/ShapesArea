@@ -1,6 +1,6 @@
 ﻿namespace ShapesArea {
 
-	internal interface IShape {
+	internal interface IAreaCalculator {
 
 		double Area();
 	}
