@@ -3,6 +3,8 @@
 	public class TriangleCalculator : IAreaCalculator {
 		public double[] SidesLengths { get; set; }
 
+		/// <param name="sidesLengths">Массив из 3 элементов, содержащий длины сторон треугольника</param>
+		/// <exception cref="Exception">Если длина массива не соответствует 3, или стороны не могут составить треугольник - будет сгенерировано исключение</exception>
 		public TriangleCalculator(double[] sidesLengths) {
 			if (sidesLengths.Length != 3) {
 				throw new Exception($"{nameof(sidesLengths)} должна содержать ровно три элемента.");
@@ -29,6 +31,10 @@
 			return area;
 		}
 
+		/// <summary>
+		/// Определяет прямоугольный ли треугольник
+		/// </summary>
+		/// <param name="sidesLengths">Массив из 3 элементов, содержащий длины сторон треугольника</param>
 		public static bool IsRightTriangle(double[] sidesLengths) {
 			var a = sidesLengths[0];
 			var b = sidesLengths[1];
